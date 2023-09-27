@@ -153,7 +153,7 @@
 
     <div class="mt-8">{{type}}</div>
 
-    <div class="mt-8">
+    <div class="mt-8" v-if="type=='buyer'">
       <div class="mt-6">
         <h2 class="text-xl font-semibold leading-tight text-gray-700">Buyers</h2>
 
@@ -376,7 +376,7 @@
       </div>
     </div>
 
-    <div class="mt-8">
+    <div class="mt-8" v-if="type=='retailer'">
       <div class="mt-6">
         <h2 class="text-xl font-semibold leading-tight text-gray-700">Retailers</h2>
 
@@ -599,7 +599,7 @@
       </div>
     </div>
 
-    <div class="mt-8">
+    <div class="mt-8" v-if="type=='runit'">
       <div class="mt-6">
         <h2 class="text-xl font-semibold leading-tight text-gray-700">Recycling Units</h2>
 
@@ -822,7 +822,7 @@
       </div>
     </div>
 
-    <div class="mt-8">
+    <div class="mt-8" v-if="type=='regulator'">
       <div class="mt-6">
         <h2 class="text-xl font-semibold leading-tight text-gray-700">Regulators</h2>
 
